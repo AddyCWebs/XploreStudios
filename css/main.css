@@ -165,6 +165,6 @@ footer {
 }
 
 #navbar * {
-	transition: ease 0.2s;
-	-webkit-transition: ease 0.2s;
+	transition: background-color ease 0.3s;
+	-webkit-transition: background-color ease 0.3s;
 }
