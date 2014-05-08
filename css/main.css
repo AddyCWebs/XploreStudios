@@ -5,12 +5,15 @@
 }
 
 html, body {
-	width: 100%;
-	height: 100%;
+	width: 100% !important;
 }
 
 body {
 	padding-top: 75px;
+}
+
+.row {
+	margin:0px;
 }
 
 #navbar {
@@ -70,7 +73,7 @@ body {
 	position: relative;
 	background-image: url(../images/home-j.jpg);
 	background-size: cover;
-	height: 90%;
+	height: 75%;
 }
 
 .home-j .cont {
@@ -129,4 +132,5 @@ h1 {
 
 #mainpage {
 	background-color: #464646;
+	height: 100%;
 }
