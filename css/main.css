@@ -163,3 +163,8 @@ footer {
 	left: 0px;
 	z-index: -1;
 }
+
+#navbar * {
+	transition: ease 0.2s;
+	-webkit-transition: ease 0.2s;
+}
