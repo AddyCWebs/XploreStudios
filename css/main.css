@@ -1,5 +1,12 @@
 @import url(https://fonts.googleapis.com/css?family=Alegreya+Sans:100,300,400,500,700,800,900,100italic,500italic,800italic,700italic,900italic,400italic,300italic&subset=latin,latin-ext);
 
+::selection {
+	background: #5BD65B;
+}
+::-moz-selection {
+	background: #5BD65B;
+}
+
 * {
 	box-sizing: border-box !important;
 }
@@ -10,6 +17,7 @@ html, body {
 
 body {
 	padding-top: 75px;
+	padding-bottom: 300px;
 }
 
 .row {
@@ -73,6 +81,7 @@ body {
 	position: relative;
 	background-image: url(../images/home-j.jpg);
 	background-size: cover;
+	background-position: 0% 90%;
 	height: 75%;
 }
 
@@ -133,4 +142,24 @@ h1 {
 #mainpage {
 	background-color: #464646;
 	height: 100%;
+}
+
+#sidebar {
+	background-color: #131313;
+	height: 100%;
+	width: 250px;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index: -1;
+}
+
+footer {
+	background-color: #232323;
+	height: 300px;
+	width: 100%;
+	position: fixed;
+	bottom: 0px;
+	left: 0px;
+	z-index: -1;
 }
