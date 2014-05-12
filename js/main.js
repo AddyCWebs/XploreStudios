@@ -3,6 +3,8 @@ var menuToggled = 0;
 
 function size() {
 	$(".home-j").css("height",($(window).height() - $("#navbar").height()) * jumbotronHeightPercent);
+	$(".slider-container").css("height",($(window).height() - $("#navbar").height()) * jumbotronHeightPercent);
+	$(".slider").css("height",($(window).height() - $("#navbar").height()) * jumbotronHeightPercent);
 }
 
 size();
@@ -28,3 +30,4 @@ $(document).keyup(function (e) {
 		sidebarToggle()
 	}
 });
+
