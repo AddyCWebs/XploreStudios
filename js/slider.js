@@ -22,9 +22,10 @@ pauseSlider = 1;
 
 function doProgress() {
 	$(".progress").animate({width: "100%"}, slideDelay, function() {
-		if (pauseSlider == 1)
+		if (pauseSlider == 1) {
 			currentSlide++;
 			toggleImage(currentSlide);
+		}
 	})
 }
 
