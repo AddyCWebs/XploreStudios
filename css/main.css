@@ -79,6 +79,28 @@ body {
 
 .slider {
 	overflow: hidden;
+	position: relative;
+}
+
+#prevSlide, #nextSlide {
+	height: 100%;
+	width: 15%;
+	background-color: transparent;
+	position: absolute;
+	z-index: 1;
+	top: 0px;
+}
+
+#prevSlide {
+	left: 0px;
+}
+
+#nextSlide {
+	right: 0px;
+}
+
+#prevSlide:hover, #nextSlide:hover {
+	background-color: rgba(0, 0, 0, 0.5);
 }
 
 .progress {

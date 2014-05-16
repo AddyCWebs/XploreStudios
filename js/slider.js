@@ -1,10 +1,10 @@
 var images = []
 
-images[0] = "http://img.youtube.com/vi/wfGu0GlyuPI/maxresdefault.jpg";
+images[0] = "https://img.youtube.com/vi/wfGu0GlyuPI/maxresdefault.jpg";
 images[1] = "images/slider_2.png";
 images[2] = "images/slider_3.png";
 
-var slideDelay = 20000;
+var slideDelay = 2000;
 
 $(".home-j").css("width", $(window).width());
 
@@ -18,16 +18,24 @@ $(".slider-container").css("width", noimg * $(".home-j").width())
 	
 currentMargin = 0;
 
+pauseSlider = 1;
+
 function doProgress() {
 	$(".progress").animate({width: "100%"}, slideDelay, function() {
-		toggleImage()
+		if (pauseSlider == 1)
+			currentSlide++;
+			toggleImage(currentSlide);
 	})
 }
 
+currentSlide = 0;
+
 function toggleImage() {
-	currentMargin = currentMargin + $(window).width();
-	if(currentMargin > 3 * $(".home-j").width())
-		currentMargin = 0;
+	if(currentSlide >= 3)
+		currentSlide = 0;
+	else if (currentSlide <= -1)
+		currentSlide = 0;
+	currentMargin = currentSlide * $(window).width();
 	$(".slider-container").animate({marginLeft: -currentMargin}, "fast", function() {
 		$(".progress").css("width", "0%")
 		doProgress();
