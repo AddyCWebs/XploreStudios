@@ -1,8 +1,10 @@
 var images = []
 
-images[0] = "images/slider_1.png";
+images[0] = "http://img.youtube.com/vi/wfGu0GlyuPI/maxresdefault.jpg";
 images[1] = "images/slider_2.png";
 images[2] = "images/slider_3.png";
+
+var slideDelay = 20000;
 
 $(".home-j").css("width", $(window).width());
 
@@ -17,7 +19,7 @@ $(".slider-container").css("width", noimg * $(".home-j").width())
 currentMargin = 0;
 
 function doProgress() {
-	$(".progress").animate({width: "100%"}, 5000, function() {
+	$(".progress").animate({width: "100%"}, slideDelay, function() {
 		toggleImage()
 	})
 }

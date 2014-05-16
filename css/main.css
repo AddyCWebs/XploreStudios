@@ -96,10 +96,12 @@ body {
 .home-j {
 	position: relative;
 	background-size: cover;
-	background-position: 0% 90%;
+	background-position: center;
 	height: 75%;
 	margin: 0px;
 	float: left;
+	text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+	padding: 0px;
 }
 
 .home-j .cont {
@@ -114,6 +116,10 @@ body {
 	color: white;
 	font-weight: 300;
 	font-size: 20px;
+}
+
+iframe {
+	display: none;
 }
 
 h1 {
